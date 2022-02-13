@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+   *{
+     box-sizing: border-box;
+   } 
+   body{
+     margin: 0;
+     padding: 0;
+     width:100%;
+     height: 100vh;
+     background-color: hsl(217, 54%, 11%);
+     display: flex;
+     align-items: center;
+     font-family: 'Outfit', sans-serif;
+   }
+   .content{
+    margin:0 auto;
+   }
+   .nft-card{
+     width: 60%;
+     background-color: hsl(216, 50%, 16%);
+     padding: 3%;
+      margin:  auto;
+     border-radius: 20px;
+   }
+   .image-equi{
+     background-color: hsl(178, 100%, 50%);
+     overflow: hidden;
+     border-radius: 5%;
+   }
+   .image-equi img{
+     width:100%;
+     display: flex;
+     align-items: stretch;
+   }
+   h1{
+     color: hsl(0, 0%, 100%);
+     font-weight: 600;
+     font-size: 22px;
+   }
+   p{
+     font-size: 18px;
+     color: hsl(215, 51%, 70%);
+     font-weight: 300;
+   }
+   .stats{
+     display: flex;
+     justify-content:space-between ;
+     padding-bottom:25px; 
+     padding-top: 5px;
+     border-bottom: 1px solid hsl(215, 32%, 27%);
+     margin-bottom: 20px;
+   }
+   .stats .day, .stats .eth{
+     color:hsl(215, 51%, 70%) ;
+     font-weight: 600 ;
+     display: flex;
+     align-items: center;
+   }
+   .stats .day img, .stats .eth img{
+     margin-right: 5px;
+   }
+   .nft-card .stats .eth{
+     color:hsl(178, 100%, 50%);
+     font-weight:600;
+   }
+   .profile{
+    display: flex;
+    justify-items:start;
+    align-items: center;
+    
+   }
+    .image-profile{
+      width:30px;
+      margin-right: 25px;
+      
+      ;
+      overflow: hidden;
+    }
+   .image-profile img {
+     width: 100%;
+     padding: 3%;
+     background-color:  hsl(0, 0%, 100%);
+      border-radius: 50%;
+    }
+
+    .profile .name{
+      display: flex;
+      align-items: center;
+      color:hsl(215, 51%, 70%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      
+    }
+    .profile .name span{
+      color:hsl(0, 0%, 100%);
+      padding-left: 8px;
+      font-weight: 600;
+    }
+
+    .nft-card .image-equi img:active{
+      opacity: 0.5;
+      
+    }
+    h1:active{
+      color: hsl(178, 100%, 50%);
+    }
+    .profile .name span:active{
+      color: hsl(178, 100%, 50%);
+    }
+    
+
+    @media only screen and (max-width: 375px) {
+      h1{
+        font-size: 18px;
+      }
+      p{
+        font-size: 12px;
+      }
+      .profile .name{
+        font-size: 10px;
+      }
+      .day, .eth {
+        font-size: smaller;
+      }
+      .nft-card .profile{
+        margin-bottom: 5px;
+
+      }
+      .stats{
+        margin-bottom: 10px;
+      }
+      .profile .image-profile{
+        margin-right: 10px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="nft-card">
+      <div class="image-equi">
+        <img src="images/image-equilibrium.jpg" alt="">
+      </div>
+      <div class="items">
+        <h1> Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div class="stats">
+        <div class="eth"><img src="images/icon-ethereum.svg" alt=""> 0.041 ETH</div>
+        <div class="day"><img src="images/icon-clock.svg" alt=""> <span>3 days left</span></div>
+      </div>
+      <div class="profile">
+        <div class="image-profile">
+          <img src="images/image-avatar.png" alt="">
+        </div>
+        <div class="name">
+          Creation of <span>Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sierra_Ara</a>.
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- The reason why people give up so fast is because they tend to look at how far
+they still have to go, instead of how far they have gotten. -unknown -->
